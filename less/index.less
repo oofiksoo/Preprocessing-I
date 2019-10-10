@@ -103,6 +103,7 @@ html, body {
 }//close navbar container
 .Home{
 	padding-top:8%;
+	padding-bottom: 2%;
 	display:flex;
 	justify-content: center;
 	
@@ -137,10 +138,10 @@ html, body {
 .Projects {
 	display:flex;
 	justify-content: center;
-	padding:4%;
+	padding:0 4%;
 }
 .Projects .ContainerProjects{
-	padding:4%;
+	padding:0 4%;
 	display:flex;
 	justify-content: center;
 }
@@ -161,10 +162,15 @@ margin: 2% 0%;
 	flex-direction:column;
 	width:30%;
 	margin:2%;
+	border: 1px solid skyblue;
+	border-radius: 10px;
+}
+.Projects .ContainerProjects .prjbox p {
+	margin:2%;
 }
 .Projects .ContainerProjects .prjbox .prjboxbtns {
 	display:flex;
-	margin: 2%;
+	margin: 4%;
 
 }
 .Projects .ContainerProjects .prjbox .prjboxbtns a {
@@ -181,6 +187,13 @@ margin: 2% 0%;
 	text-decoration: none;
 }
 
+.pagebreak{
+	
+	padding:0 4%;
+}
+.pagebreak hr{
+	border-top:2px dotted skyblue;
+}
 .History{
 	padding: 2%;
 	
@@ -191,20 +204,162 @@ margin: 2% 0%;
 	flex-direction:column;
 }
 .History .ContainerHistory .hstbox {
+	display:flex;
+	align-items: center;
+	flex-direction:column;
+	justify-content: space-around;
 	width:90vw;
 	height:20vh;
 	border:1px solid skyblue;
 	border-radius:10px;
-	margin:2% 1%;
+	margin:1% 2%;
 	padding:2%;
 }
 .History .ContainerHistory .hstboxalt {
+	display:flex;
+	align-items: center;
+	flex-direction:column;
+	justify-content: space-around;
 	width:90vw;
 	height:20vh;
 	color: black;
 	background-color:skyblue;
 	border:1px solid skyblue;
 	border-radius:10px;
-	margin:2% 1%;
+	margin:1% 2%;
 	padding:2%;
+}
+
+.History .ContainerHistory .hstbox h3{
+	font-size: 2rem;
+	padding-top: 1%;
+	text-align:center;
+	
+}
+
+.History .ContainerHistory .hstboxalt h3{
+	font-size: 2rem;
+	padding-top: 1%;
+	text-align:center;
+
+}
+.History .ContainerHistory .hstbox h4{
+	font-size: 1rem;
+	text-align:center;
+	color:grey;
+	font-style: italic;
+	border:1px solid skyblue;
+	border-radius:5px;
+	padding: .5%;
+			
+}
+.History .ContainerHistory .hstboxalt h4{
+	font-size: 1rem;
+	text-align:center;
+	color:grey;
+	font-style: italic;
+	border:1px solid white;
+	border-radius:5px;
+	padding:.5%;
+		
+}
+.History .ContainerHistory .hstboxalt p{
+	font-size: 1rem;
+	text-align:center;
+	color:black;
+	margin:2%;
+	padding:2%;
+	background-color:white;
+	border: 1px solid skyblue;
+	border-radius:10px;	
+}
+.History .ContainerHistory .hstbox p{
+	font-size: 1rem;
+	text-align:center;
+	color:black;
+	margin:2%;
+	padding:2%;
+	background-color:skyblue;
+	border:1px solid skyblue;
+	border-radius:10px;	
+}
+.Contact .ContainerContact {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0 4%;
+}
+.Contact .ContainerContact .cntctbox{
+	width:25%;
+	margin:2%;
+	height:20vh;
+	border:2px double skyblue;
+	border-radius:100%;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.Contact .ContainerContact .cntctbox h3{
+	font-size: 2rem;
+	text-decoration: underline;
+	color:skyblue
+
+}
+.Contact .ContainerContact .cntctbox p{
+	font-size: 1rem;
+	color:skyblue;
+	text-align: center;
+	padding: 2% 0;
+}
+.Contact .ContainerContact .cntctbox address{
+	font-size: 1rem;
+	color:skyblue;
+	text-align: center;
+	padding: 2% 0;
+}
+footer {
+	display:flex;
+	justify-content: center;
+}
+footer .ContainerFooter {
+	display:flex;
+	justify-content: center;
+	height:10vh;
+	background-color:black;
+	width:100%;
+}	
+footer .ContainerFooter .FooterNavBar {
+	height:50%;
+	width:75%;
+	margin: 0 2%;
+	padding:2%;
+}
+footer .ContainerFooter .FooterNavBar nav {
+	background-color:cornflowerblue;
+	border:1px solid black;
+	border-radius:20px;
+	display:flex;
+	align-items: center;
+	justify-content:space-around;	
+}
+
+footer .ContainerFooter .FooterNavBar	nav	a {
+	text-decoration: none;
+	color:white;
+	margin:2%;
+}
+	
+footer .ContainerFooter .Logo {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	padding:4%;
+	margin:0 2%;
+	font-size:5rem;
+	border:1px solid black;
+	border-radius:100px;
+	background-color:cornflowerblue;
+	width:8%;
 }
