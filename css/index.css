@@ -192,6 +192,7 @@ body {
   width: 90%;
 }
 .ContainerHome .Slogan {
+  color: navy;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -214,7 +215,7 @@ body {
   padding: 2%;
 }
 .ContainerHome .Narritive p {
-  color: white;
+  color: navy;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -226,6 +227,7 @@ body {
   margin: 4%;
   width: 30vw;
   height: 35vh;
+  text-align: center;
 }
 .Projects {
   display: flex;
@@ -240,13 +242,13 @@ body {
 .Projects .ContainerProjects p {
   margin: 2% 0%;
 }
-.Projects .ContainerProjects h2 {
+.Projects h2 {
   font-size: 2rem;
   font-style: italic;
   margin-bottom: 2%;
   text-align: center;
 }
-.Projects .ContainerProjects .prjbox {
+.Projects .prjbox {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -255,7 +257,7 @@ body {
   border: 1px solid skyblue;
   border-radius: 10px;
 }
-.Projects .ContainerProjects .prjbox p {
+.Projects .prjbox p {
   margin: 2%;
 }
 .Projects .ContainerProjects .prjbox .prjboxbtns {
@@ -295,21 +297,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   width: 90vw;
-  height: 20vh;
-  border: 1px solid skyblue;
-  border-radius: 10px;
-  margin: 1% 2%;
-  padding: 2%;
-}
-.History .ContainerHistory .hstboxalt {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 90vw;
-  height: 20vh;
-  color: black;
-  background-color: skyblue;
+  height: 25vh;
   border: 1px solid skyblue;
   border-radius: 10px;
   margin: 1% 2%;
@@ -319,11 +307,7 @@ body {
   font-size: 2rem;
   padding-top: 1%;
   text-align: center;
-}
-.History .ContainerHistory .hstboxalt h3 {
-  font-size: 2rem;
-  padding-top: 1%;
-  text-align: center;
+  margin-top: 2%;
 }
 .History .ContainerHistory .hstbox h4 {
   font-size: 1rem;
@@ -333,6 +317,37 @@ body {
   border: 1px solid skyblue;
   border-radius: 5px;
   padding: 0.5%;
+  margin: 1%;
+}
+.History .ContainerHistory .hstbox p {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  margin: 2%;
+  padding: 2%;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+.History .ContainerHistory .hstboxalt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90vw;
+  height: 25vh;
+  color: black;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+  margin: 1% 2%;
+  padding: 2%;
+}
+.History .ContainerHistory .hstboxalt h3 {
+  font-size: 2rem;
+  padding-top: 1%;
+  text-align: center;
+  margin-top: 2%;
 }
 .History .ContainerHistory .hstboxalt h4 {
   font-size: 1rem;
@@ -342,6 +357,7 @@ body {
   border: 1px solid white;
   border-radius: 5px;
   padding: 0.5%;
+  margin: 1%;
 }
 .History .ContainerHistory .hstboxalt p {
   font-size: 1rem;
@@ -350,16 +366,6 @@ body {
   margin: 2%;
   padding: 2%;
   background-color: white;
-  border: 1px solid skyblue;
-  border-radius: 10px;
-}
-.History .ContainerHistory .hstbox p {
-  font-size: 1rem;
-  text-align: center;
-  color: black;
-  margin: 2%;
-  padding: 2%;
-  background-color: skyblue;
   border: 1px solid skyblue;
   border-radius: 10px;
 }
@@ -429,11 +435,6 @@ footer .ContainerFooter .FooterNavBar nav {
   align-items: center;
   justify-content: space-around;
 }
-footer .ContainerFooter .FooterNavBar nav a {
-  text-decoration: none;
-  color: white;
-  margin: 2%;
-}
 footer .ContainerFooter .Logo {
   display: flex;
   justify-content: center;
@@ -446,4 +447,9 @@ footer .ContainerFooter .Logo {
   border-radius: 100px;
   background-color: cornflowerblue;
   width: 8%;
+}
+footer .ContainerFooter .FooterNavBar nav a {
+  text-decoration: none;
+  color: white;
+  margin: 2%;
 }
