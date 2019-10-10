@@ -192,7 +192,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 30px;
   padding: 4%;
 }
@@ -220,6 +220,7 @@ body {
   font-size: 2rem;
   font-style: italic;
   margin-bottom: 2%;
+  text-align: center;
 }
 .Projects .ContainerProjects .prjbox {
   display: flex;
@@ -244,4 +245,30 @@ body {
   padding: 2%;
   width: 40%;
   text-decoration: none;
+}
+.History {
+  padding: 2%;
+}
+.History .ContainerHistory {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.History .ContainerHistory .hstbox {
+  width: 90vw;
+  height: 20vh;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+  margin: 2% 1%;
+  padding: 2%;
+}
+.History .ContainerHistory .hstboxalt {
+  width: 90vw;
+  height: 20vh;
+  color: black;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+  margin: 2% 1%;
+  padding: 2%;
 }
