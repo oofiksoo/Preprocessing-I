@@ -1,1 +1,538 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.ContainerNavBar {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .ContainerNavBar {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.ContainerNavBar .NavBar {
+  height: 50%;
+  width: 75%;
+  margin: 0 2%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .ContainerNavBar .NavBar {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.ContainerNavBar .NavBar nav {
+  background-color: cornflowerblue;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .ContainerNavBar .NavBar nav {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.ContainerNavBar .NavBar nav a {
+  text-decoration: none;
+  color: white;
+  margin: 2%;
+}
+.ContainerNavBar .Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 4%;
+  margin: 0 2%;
+  font-size: 5rem;
+  border: 1px solid black;
+  border-radius: 100px;
+  background-color: cornflowerblue;
+  width: 8%;
+}
+@media (max-width: 500px) {
+  .ContainerNavBar .Logo {
+    width: 50%;
+    margin-top: 8%;
+  }
+}
+.Home {
+  padding-top: 8%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+.ContainerHome {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  padding: 4%;
+  background-color: skyblue;
+  height: 40vh;
+  border: 2px solid white;
+  border-radius: 100px;
+  width: 90%;
+}
+@media (max-width: 500px) {
+  .ContainerHome {
+    margin-top: 50%;
+  }
+}
+.ContainerHome .Slogan {
+  color: navy;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 4%;
+}
+@media (max-width: 500px) {
+  .ContainerHome .Slogan {
+    display: none;
+  }
+}
+.ContainerHome .Slogan h1 {
+  display: flex;
+  text-align: center;
+  font-size: 5rem;
+  margin: 2%;
+  padding: 2%;
+}
+.ContainerHome .Narritive {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .ContainerHome .Narritive {
+    width: 100%;
+  }
+}
+.ContainerHome .Narritive p {
+  color: navy;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: skyblue;
+  padding: 4%;
+  margin: 4%;
+  width: 30vw;
+  height: 35vh;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .ContainerHome .Narritive p {
+    width: 100%;
+  }
+}
+.Projects {
+  display: flex;
+  justify-content: center;
+  padding: 0 4%;
+}
+.Projects .ContainerProjects {
+  padding: 0 4%;
+  display: flex;
+  justify-content: center;
+}
+.Projects .ContainerProjects p {
+  margin: 2% 0%;
+}
+.Projects h2 {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 2%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .Projects h2 {
+    font-size: 1.2rem;
+  }
+}
+.Projects .prjbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  margin: 2%;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+.Projects .prjbox p {
+  margin: 2%;
+}
+.Projects .ContainerProjects .prjbox .prjboxbtns {
+  display: flex;
+  margin: 4%;
+}
+@media (max-width: 500px) {
+  .Projects .ContainerProjects .prjbox .prjboxbtns {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.Projects .ContainerProjects .prjbox .prjboxbtns a {
+  color: black;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2%;
+  padding: 2%;
+  width: 40%;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .Projects .ContainerProjects .prjbox .prjboxbtns a {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.pagebreak {
+  padding: 0 4%;
+}
+.pagebreak hr {
+  border-top: 2px dotted skyblue;
+}
+.History {
+  padding: 2%;
+}
+.History .ContainerHistory {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.History .ContainerHistory .hstbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90vw;
+  height: 25vh;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+  margin: 1% 2%;
+  padding: 2%;
+}
+.History .ContainerHistory .hstbox h3 {
+  font-size: 2rem;
+  padding-top: 1%;
+  text-align: center;
+  margin-top: 2%;
+}
+.History .ContainerHistory .hstbox h4 {
+  font-size: 1rem;
+  text-align: center;
+  color: grey;
+  font-style: italic;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  padding: 0.5%;
+  margin: 1%;
+}
+.History .ContainerHistory .hstbox p {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  margin: 2%;
+  padding: 2%;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+.History .ContainerHistory .hstboxalt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90vw;
+  height: 25vh;
+  color: black;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+  margin: 1% 2%;
+  padding: 2%;
+}
+.History .ContainerHistory .hstboxalt h3 {
+  font-size: 2rem;
+  padding-top: 1%;
+  text-align: center;
+  margin-top: 2%;
+}
+.History .ContainerHistory .hstboxalt h4 {
+  font-size: 1rem;
+  text-align: center;
+  color: grey;
+  font-style: italic;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5%;
+  margin: 1%;
+}
+.History .ContainerHistory .hstboxalt p {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  margin: 2%;
+  padding: 2%;
+  background-color: white;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+.Contact .ContainerContact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 4%;
+}
+@media (max-width: 500px) {
+  .Contact .ContainerContact {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.Contact .ContainerContact .cntctbox {
+  width: 25%;
+  margin: 2%;
+  height: 25vh;
+  border: 2px double skyblue;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .Contact .ContainerContact .cntctbox {
+    height: 25vh;
+    width: 100%;
+  }
+}
+.Contact .ContainerContact .cntctbox i {
+  color: skyblue;
+  margin: 2%;
+}
+.Contact .ContainerContact .cntctbox h3 {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: skyblue;
+  margin: 2%;
+}
+.Contact .ContainerContact .cntctbox p {
+  font-size: 1rem;
+  color: skyblue;
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+}
+.Contact .ContainerContact .cntctbox address {
+  font-size: 1rem;
+  color: skyblue;
+  text-align: center;
+  padding: 2% 0;
+  margin: 2%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  footer {
+    display: none;
+  }
+}
+footer .ContainerFooter {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background-color: black;
+  width: 100%;
+}
+footer .ContainerFooter .FooterNavBar {
+  height: 50%;
+  width: 75%;
+  margin: 0 2%;
+  padding: 2%;
+}
+footer .ContainerFooter .FooterNavBar nav {
+  background-color: cornflowerblue;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .ContainerFooter .Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 4%;
+  margin: 0 2%;
+  font-size: 5rem;
+  border: 1px solid black;
+  border-radius: 100px;
+  background-color: cornflowerblue;
+  width: 8%;
+}
+footer .ContainerFooter .FooterNavBar nav a {
+  text-decoration: none;
+  color: white;
+  margin: 2%;
+}
